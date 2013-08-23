@@ -31,7 +31,6 @@ public class PingVerticle extends Verticle {
 
   public void start() {
 
-
     vertx.eventBus().registerHandler("ping-address", new Handler<Message<String>>() {
       @Override
       public void handle(Message<String> message) {

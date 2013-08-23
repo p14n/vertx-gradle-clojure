@@ -1,7 +1,8 @@
 {
 
+"main":"ping/core.clj",
   // Java verticle
-  "main":"com.mycompany.myproject.PingVerticle",
+ // "main":"com.mycompany.myproject.PingVerticle",
 
   // In this example we also provide various other versions of the main verticle, you can uncomment this and
   // play around:
