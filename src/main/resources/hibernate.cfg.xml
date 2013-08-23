@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration> <session-factory>
+    <property name="hibernate.connection.driver_class">com.ibm.as400.access.AS400JDBCDriver</property>
+    <property name="hibernate.connection.url">jdbc:as400://172.26.27.15;naming=system;prompt=false;libraries=F63FIGARO,F63HLDDTAC</property>
+    <property name="hibernate.connection.username">DPCDEV</property>
+    <property name="hibernate.connection.password">DPCDEV</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.DB2400Dialect</property>
+    <!-- Drop and re-create the database schema on startup -->
+    <mapping resource="individual.hbm.xml"/>
+</session-factory>
+
+</hibernate-configuration>

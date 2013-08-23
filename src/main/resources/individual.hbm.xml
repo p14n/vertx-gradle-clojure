@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class entity-name="Individual" table="PERSON" polymorphism="implicit" lazy="false">
+
+        <id name="uecode" type="string">
+            <column name="uecode">
+            </column>
+        </id>
+
+        <property name="name" column="UENAME" type="string">
+        </property>
+    </class>
+</hibernate-mapping>
